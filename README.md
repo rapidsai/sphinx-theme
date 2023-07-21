@@ -1,5 +1,7 @@
 # RAPIDS Documentation Sphinx PyData Theme Assets
-**Warning** WIP - still experimental 
+> **Warning**
+> Work In Progress & Experimental 
+
 Using default [PyData Theme](https://pydata-sphinx-theme.readthedocs.io/en/stable/) with customized configuration to standardized RAPIDS documentation navigation. 
 
 - RAPIDS nav section based on [announcements banner](https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/announcements.html)
