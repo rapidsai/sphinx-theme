@@ -7,7 +7,7 @@ Using default [PyData Theme](https://pydata-sphinx-theme.readthedocs.io/en/stabl
 
 
 ## How to Use
-Copy the code in the 'conf.py' file into your projects Sphinx config file. Change the version switcher file name to 'PROJECT-doc-versions.json'.
+Append the code in the 'conf.py' file into your projects Sphinx config file. Verify that you have up to date 'project' and 'version' variables and no other configurations that would override the options. 
 
 
 ## Navigation Standardization 
