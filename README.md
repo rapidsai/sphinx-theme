@@ -1,7 +1,7 @@
 # RAPIDS Documentation Sphinx PyData Theme Assets
 Using default [PyData Theme](https://pydata-sphinx-theme.readthedocs.io/en/stable/) with customized configuration to standardized RAPIDS documentation navigation. 
 
-- RAPIDS nav section based on [announcements banner](ttps://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/announcements.html)
+- RAPIDS nav section based on [announcements banner](https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/announcements.html)
 - Custom colors based on [css styling](https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/styling.html)
 - Doc versions based on [version switcher](https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/version-dropdown.html)
 
