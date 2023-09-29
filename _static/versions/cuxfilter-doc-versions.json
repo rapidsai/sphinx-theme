@@ -14,9 +14,4 @@
         "version": "23.04",
         "url": "https://docs.rapids.ai/api/cuxfilter/stable/"
     },
-    {
-        "name": "archive",
-        "version": "<23.04",
-        "url": "https://rapids.ai/api-docs"
-    }
 ]
