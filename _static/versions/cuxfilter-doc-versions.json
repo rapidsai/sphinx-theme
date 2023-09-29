@@ -17,6 +17,6 @@
     {
         "name": "archive",
         "version": "<23.04",
-        "url": "#"
+        "url": "https://rapids.ai/api-docs"
     }
 ]
