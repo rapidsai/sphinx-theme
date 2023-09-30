@@ -1,84 +1,109 @@
-# RAPIDS Custom Docs css 
-# https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/styling.html#custom-css
+/* RAPIDS Custom Docs css */
+/* https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/styling.html#custom-css */
 
 body {
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
 }
 
+/* RAPIDS custom colors primary */
 
-# RAPIDS custom colors primary          
 html[data-theme="light"] {
     --pst-color-primary: #7306ff;
     --pst-color-secondary: #984dfb;
     --pst-color-info: #ffb500;
     --pst-color-danger: #d216d2;
-    --pst-color-background: #f0f0f0;
-    --pst-color-on-background : #f0f0f0;
-    --pst-color-surface: #f8f8f8;
-    --pst-color-on-surface: #f8f8f8;
     --pst-color-target: #37c9dd;
 }
 
 html[data-theme="dark"] {
-    --pst-color-primary: white;
+    --pst-color-primary: #7306ff;
+    --pst-color-secondary: #984dfb;
+    --pst-color-info: #ffb500;
+    --pst-color-danger: #d216d2;
+    --pst-color-target: #37c9dd;
 }
 
+/* PyData Overrides */
 
-# RAPIDS Nav Bar Styles 
-.rapids-nav-container {
-    font-family: 'Open Sans', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: #7400ff;
-    align-items: stretch;
-    display: flex;
-    align-items: center;
-    min-height: 3.25rem;
+/* NavBar */
+.bd-header {
+    height: 56px;
+    background-color: #7400ff !important;
     box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
 }
 
-.rapids-nav-fixed {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 33;
-}
-
-.rapids-nav-logo-container {
-    align-items: center;
-    padding: 0.5rem 0.75rem;
-    flex-grow: 0;
-    flex-shrink: 0;
-    display: flex;
-    cursor: pointer;
-
-}
-
-.rapids-nav-logo {
-    height: auto;
-    max-height: 2.5rem;
-    max-width: 100%;
-}
-
-.rapids-nav-links-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.rapids-nav-link-item a {
-    text-decoration: none;
+.bd-header .navbar-nav li a.nav-link, .bd-header .navbar-nav .dropdown button {
     color: white;
-    font-weight: 700;
-    line-height: 2;
-    padding: 1rem 1rem;
-    transition: all 0.4s ease-out;
+    font-weight: bold;
 }
 
-.rapids-nav-link-item a:hover {
-    background-color: inherit;
+.bd-header .navbar-nav>.active>.nav-link {
     color: #b49fd6 !important;
-    transition: color 0.2s ease-out;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.bd-header .navbar-nav li a.nav-link:focus, .bd-header .navbar-nav li a.nav-link:hover {
+    color: #b49fd6 !important;
+}
+
+.navbar-brand, .navbar-brand:hover {
+    padding: 0.6em 0;
+    text-decoration: none;
+}
+
+.navbar-brand p {
+    color: white;
+    font-weight: bold;
+}
+
+button.btn.version-switcher__button {
+    color: white;
+    margin-bottom: unset;
+}
+
+.version-switcher__menu {
+    background-color: rgb(139 47 255);
+    border-width: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius:0;
+    box-shadow: 0 4px 4px rgb(10 10 10 / 20%);    
+}
+
+.version-switcher__menu a.list-group-item:hover {
+    background-color: rgb(139 47 255);
+    color: #b49fd6 !important;
+}
+
+.dropdown-menu[data-bs-popper]{
+    margin-top: 0.7rem;
+}
+
+.version-switcher__menu a.list-group-item {
+    color: white;
+    background-color: inherit;
+}
+
+.search-button, .theme-switch-button span, .navbar-icon-links i.fa-square-twitter:before {
+    color: #ebebeb;
+}
+
+.bd-header .navbar-nav .dropdown .dropdown-menu {
+    background-color: rgb(139 47 255);
+    margin: 0.6rem;
+    border-width: 0;
+    min-width: 12rem;
+    border-top-right-radius: 0;
+    border-top-left-radius:0;
+    box-shadow: 0 4px 4px rgb(10 10 10 / 20%);
+}
+
+.bd-header label.sidebar-toggle {
+    color: white;
+}
+
+/* Body Text */
+nav.bd-links p.bd-links__title {
+    color: rgb(48, 48, 48);
 }
