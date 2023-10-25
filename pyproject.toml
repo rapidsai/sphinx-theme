@@ -1,0 +1,32 @@
+[project]
+name = "rapidsai-sphinx-theme"
+description = "PyData-based Sphinx theme for RAPIDS"
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "sphinx>=5.0",
+  "pydata-sphinx-theme"
+]
+license = { file = "LICENSE" }
+maintainers = [
+  { name = "RAPIDS Team", email = "general@rapids.ai" },
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Framework :: Sphinx",
+  "Framework :: Sphinx :: Theme",
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Source" = "https://github.com/rapidsai/sphinx-theme"
+
+[project.entry-points]
+"sphinx.html_themes" = { rapidsai_sphinx_theme = "rapidsai_sphinx_theme" }
